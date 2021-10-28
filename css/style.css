@@ -1,0 +1,187 @@
+.navbar>.container{
+	flex-direction: column;
+}
+
+.dropdown-menu {
+    display: block;
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+.nav-item.dropdown .dropdown-menu{
+	display: flex;
+    justify-content: space-between;
+    border-radius: 0 !important;
+}
+.nav-item.dropdown:hover .dropdown-menu{
+	 transform: translateY(0);
+	 opacity: 1;
+	 visibility: visible;
+}
+.megamenu{
+	position: static;
+}
+.megamenu .dropdown-menu{
+	width: 100%;
+	left: 0;
+	padding: 30px 50px;
+}
+.megamenu .dropdown-menu li a{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.dropdown-item {
+        padding: .25rem 0;
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+
+@media(max-width: 991px){
+	.navbar-nav {
+    flex-direction: row;
+}
+	.dropdown-menu {
+    display: none !important;
+}
+	.navbar-nav .nav-link {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.dropdown-menu.show{
+	display: flex !important;
+}
+.megamenu .dropdown-menu{
+	position: absolute;
+}
+}
+
+@media(max-width: 767px){
+	.navbar>.container {
+    flex-direction: row;
+}
+.navbar-nav {
+    flex-direction: column;
+}
+.megamenu {
+    position: static;
+}
+
+.megamenu .dropdown-menu {
+    padding: 20px 20px;
+    display: block !important;
+}
+
+}
+
+
+.carousel-item img{
+	max-height: 100vh;
+	object-fit: cover;
+}
+
+.carousel-caption {
+    right: 15%;
+    bottom: 50%;
+    left: 15%;
+    color: #fff;
+    text-align: left;
+    transform: translateY(50px);
+}
+.carousel-caption h2{
+	font-size: 50px;
+	font-weight: 900;
+}
+
+.carousel-caption p{
+
+}
+.carousel-item::before{
+	content: ,,;
+}
+
+/**** Blog section *****/
+
+.blog-section{
+	padding: 150px 0 60px;
+}
+
+.card{
+	height: 100%;
+}
+
+.card img{
+	height: 230px;
+}
+.thumbnail{
+	position: relative;
+}
+.thumbnail strong{
+	position: absolute;
+    bottom: 10px;
+    left: 8px;
+    background: #212529;
+    color: #fff;
+    font-weight: 600;
+    padding: 6px 20px;
+    font-size: 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-section img{
+	height: 100vh;
+	object-fit: cover;
+ }
+ .contactform{
+ 	height: 100vh;
+    padding: 200px 100px; 
+
+ }
+ .form-control{
+ 	background-color: #333;
+ 	color: #fff;
+ }
+ .form-control:focus { 
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+    outline: 0;
+    box-shadow: 0 0 0 0 rgb(13 110 253 / 0%);
+}
+
+::placeholder{
+	color: #ddd !important;
+}
+
+@media(max-width: 1199px){
+	 .contactform{ 
+    padding: 150px 50px; 
+
+ }
+}
+@media(max-width: 991px){
+	 .contactform{ 
+    padding: 120px 30px; 
+
+ }
+}
+
+@media(max-width:  767px){
+	.contact-section{
+		position: relative;
+	}
+	.contactform{
+
+    position: absolute;
+    top: 0;
+	}
+}
+
